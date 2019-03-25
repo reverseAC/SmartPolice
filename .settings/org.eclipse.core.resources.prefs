@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebContent/Manager/js_m/zhu.js=UTF-8
+encoding//src/cn/smartpolice/net/NetHandler.java=UTF-8
+encoding//src/cn/smartpolice/net/NetServerListener.java=UTF-8
+encoding//src/cn/smartpolice/net/ProtocolTimer.java=UTF-8
+encoding//src/cn/smartpolice/netdao/RelateDao.java=UTF-8
+encoding//src/cn/smartpolice/netdao/UserDao.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ConstParam.java=UTF-8
+encoding//src/cn/smartpolice/protocol/MsgTaskCheckThread.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ProtocolContact.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ProtocolControl.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ProtocolFile.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ProtocolLogin.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ProtocolMessage.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ProtocolProc.java=UTF-8
+encoding//src/cn/smartpolice/protocol/ProtocolRelate.java=UTF-8
+encoding/<project>=UTF-8

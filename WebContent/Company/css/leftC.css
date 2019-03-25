@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+body{
+	background:#ECECEC;
+}
+.menu{
+	background:#f6f6f6;
+	width:230px;
+}
+.menu_main{
+	width:90%;
+	text-align:center;
+}
+.menu_main .menu_li{
+	width: 100%;
+    display: inline-block;
+    height:40px;
+    background:#0571A4;
+	background-size:cover;
+	margin-left:10px;
+	margin-top:-1px;
+	margin-bottom:1px;
+	border-bottom:1px solid #ccc;
+}
+.menu_main:first-child .menu_li{
+	margin-top:40px;
+}
+.menu ul .menu_main:last-child {
+	padding-bottom:220px;
+}
+.menu_main .menu_li a{
+	color:#fff;
+	font-size:18px;
+	font-weight:200;	
+	background:url(../icon/nav_one.png);
+	background-repeat:no-repeat;
+	background-position: 25px center;
+    width: 100%;
+    display: inline-block;
+    height:40px;
+    line-height:40px;
+    
+}
+.menu_main .menu_li a.active{
+	background:url(../icon/nav_one1.png);
+	background-repeat:no-repeat;
+	background-position: 25px center;
+}
+
+
+.menu_main ul{
+	display:none;
+	background:#ECEAEB;
+    width: 103%;
+    margin-left:4px;
+    color: #000;   
+    margin-bottom: 1px;
+}
+.menu_main ul li{
+	display:block;
+	height:40px;
+	line-height:40px;
+}
+.menu_main ul li a{
+	color: #3971AA;
+    font-size: 12px;
+    text-align: center;
+    background: url(../icon/child_chioce.png);
+    background-repeat: no-repeat;
+    background-position: 62px center;
+    display: inline-block;
+    width: 93%;
+    border-top: 1px solid #ccc;
+    text-indent: 0.8em;
+}
+.menu_main ul li:first-child a{
+	border:none;
+}
+
+
+
+
+
+
+
+
+
+

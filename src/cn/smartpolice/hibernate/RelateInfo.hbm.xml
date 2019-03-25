@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.RelateInfo" table="relate_inf">
+        <id name="relateId" type="int">
+            <column name="RELATEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="int">
+            <column name="USERID" />
+        </property>
+        <property name="deviceId" type="int">
+            <column name="DEVICEID" />
+        </property>
+        <property name="setTime" type="java.util.Date">
+            <column name="SETTIME" />
+        </property>
+        <property name="authority" type="java.lang.String">
+            <column name="AUTHORITY" />
+        </property>
+        <property name="alias" type="java.lang.String">
+            <column name="ALIAS" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+        <property name="passWord" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+    </class>
+</hibernate-mapping>

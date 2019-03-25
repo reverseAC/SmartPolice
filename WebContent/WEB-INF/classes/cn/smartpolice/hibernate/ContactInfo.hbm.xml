@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.ContactInfo" table="contact_inf">
+        <id name="masterId" type="int">
+            <column name="MASTERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="contactId" type="int">
+            <column name="CONTACTID" />
+        </property>
+        <property name="contactedId" type="int">
+            <column name="CONTACTEDID" />
+        </property>
+        <property name="groupName" type="java.lang.String">
+            <column name="GROUPNAME" />
+        </property>
+        <property name="alias" type="java.lang.String">
+            <column name="ALIAS" />
+        </property>
+        <property name="setTime" type="java.util.Date">
+            <column name="SETTIME" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+    </class>
+</hibernate-mapping>

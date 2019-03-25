@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.manage" table="manage">
+        <id name="Imanageid" type="int">
+            <column name="Imanageid" />
+            <generator class="assigned" />
+        </id>
+        <property name="managerid" type="int">
+            <column name="managerid" />
+        </property>
+        <property name="starttime" type="java.sql.Date">
+            <column name="starttime" />
+        </property>
+        <property name="endtime" type="java.sql.Date">
+            <column name="endtime" />
+        </property>
+        <property name="ipadr" type="java.lang.String">
+            <column name="ipadr" />
+        </property>
+        <property name="staff" type="java.lang.String">
+            <column name="staff" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="state" />
+        </property>
+    </class>
+</hibernate-mapping>

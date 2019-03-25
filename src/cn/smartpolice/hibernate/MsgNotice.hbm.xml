@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-10-17 12:39:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.MsgNotice" table="msg_notice">
+  
+       
+        <id name="noticeid" type="int">
+            <column name="NOTICEID" />
+            <generator class="native" />
+        </id>
+             <property name="sendid" type="int">
+            <column name="SENDID" />
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="sendtime" type="java.util.Date">
+            <column name="SENDTIME" />
+        </property>
+        <property name="msg" type="java.lang.String">
+            <column name="MSG" />
+        </property>
+        <property name="recvtype" type="int">
+            <column name="recvtype" />
+        </property>
+        <property name="sets" type="java.lang.String">
+            <column name="SETS" />
+        </property>
+    </class>
+</hibernate-mapping>

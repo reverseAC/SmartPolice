@@ -1,0 +1,571 @@
+@CHARSET "UTF-8";
+*{padding: 0;margin: 0; list-style: none;}
+
+.position{
+	border:1px solid #d1d1d1;
+	height:30px;
+	width:98%;
+	margin:18px 0 0 10px;
+	box-shadow:inset 0 0 4px #fff;
+}
+.position h3{
+	font-size:14px;
+	font-weight:normal;
+	line-height:30px;
+	display:inline-block;
+	background:url(../icon/position.png);
+	background-repeat:no-repeat;
+	background-position:2px center;
+	padding-left:30px;
+}
+.position p{
+	font-size:14px;
+	line-height:30px;
+	color:#666;
+	display:inline-block;
+}
+.position a{
+	font-size:14px;
+	line-height:30px;
+	color:#666;
+}
+/* 左侧小导航 */
+.nav_left{
+	width:15%;
+	height: auto;
+	float: left;
+	display: inline-block;
+	margin-left:10px;
+}
+.nav_group{
+	width:98%;
+	min-height:500px;
+	background:#e2e2e2;
+}
+.nav_group .nav_item{
+	margin:4px -60px;
+	font-family:"宋体";
+	color:#000;
+	font-size:12px;
+}
+.nav_group{
+	font-weight:bold;
+}
+.nav_group .nav_item li a{
+	text-indent:2;
+}
+.nav_group .nav_item span{
+	color:#535353;
+	font-size: 14px;
+	width:40%;
+	height:30px;
+	line-height:30px;
+	float: left;
+	/*display:inline-block;*/
+}
+.nav_item_img{
+	margin-left:30%;
+	float:left;
+	width:20px;
+	height: 20px;
+	line-height:30px;
+    padding: 4px 4px 0 0;
+}
+.nav_two{
+	width:58%;
+	text-decoration:underline;
+	
+}
+.nav_two li{
+	padding-left:66%;
+    font-size: 12px;
+	width:100%;
+	height:25px;
+	line-height:25px;
+	display:inline-block;
+	
+}
+.nav_two li a{
+	text-decoration:none;
+	color: #7d7575;
+}
+.nav_two li:hover ,.nav_two li a:hover{
+	width:100%;
+	height: 25px;
+	color: #fff;
+	background-color: #4aacd3;
+	text-decoration:none;
+
+}
+.per_Data{
+	width:70%;
+	float: left;
+	height: 500px;
+	background-color:#e2e2e2;
+	margin-left: 10px;
+}
+.divs>div{
+	display: none;
+}
+.form_group{
+	margin: 40px 0 0 200px;
+}
+.form_item label{
+	display: inline-block;
+	width: 20%;
+	height: 30px;
+    font-size:14px;
+    line-height: 30px;
+    float:left;
+    
+    color:#535353;
+}
+.form_item label span{
+	float:right;
+	font-weight:200;
+	font-size: 16px;
+}
+.form_item input{
+	display: inline-block;
+	width: 20%;
+	height: 30px;
+	
+}
+.form_item p{
+	display: inline-block;
+	width: 20%;
+	height: 30px;
+	
+}
+.fr0 ul{
+	margin:5% 0 0 5%;
+}
+
+
+
+#form_city{
+	width: 9.8%;
+}
+
+.fr2 form{
+	margin:20px 50px;
+}
+.file{
+	position: relative; 
+	width:100px;
+	height:30px;
+	background:#ccc;
+	display:inline-block;
+	text-align:center;
+	margin:0 45%;
+	 color: #1E88C7;
+	 background: #D0EEFF;
+	 text-decoration: none;
+	  border: 1px solid #99D3F5;
+    border-radius: 4px;
+    z-index:1;
+    line-height:1.8;
+}
+.file input{
+	position:absolute;
+    right: 0;
+    top: 0;
+    width:100px;
+    height:30px;
+    opacity: 0;
+    cursor: pointer;
+   
+}
+.file:hover{
+	background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+.fr2 span{
+    width:70%;
+	height: 500px;
+}
+/*#fr3_but_ver{
+	width: 80px;
+}*/
+.head_img{
+	float: none;
+	margin-top:80px;
+	margin-left: 40%;
+	width: 250px;
+	height: 250px;
+	border: solid 1px #a2a2a2;
+}
+#Modify_ph,
+#mail,
+#password,
+#account
+{
+	position: relative;
+	width:350px;
+	height: 300px;
+	margin: 60px 400px;
+	display: block;
+	
+}
+#Modify_ph form,
+#mail form,
+#password form,
+#account form 
+{
+	height: 240px;
+	width: 520px;
+}
+#Modify_ph form ul,
+#mail form ul,
+#password form ul,
+#account form ul{
+	width:100%;
+	height:100%;
+}
+#Modify_ph form ul li,
+#mail form ul  li,
+#password form ul  li,
+#account form ul li{
+	height:11%;
+	width:100%;
+}
+#Modify_ph form label,
+#mail form label,
+#password form label,
+#account form label 
+{
+	width: 20%;
+	height: 25px;
+	line-height: 25px;
+	
+	float: left;
+	display: inline-block;
+	
+}
+#Modify_ph form label span,
+#mail form label span,
+#password form label span,
+#account form label span
+{
+	text-align:right;
+	float: right;
+	height: 25px;
+	line-height: 25px;
+	font-size:16px;
+	color:#999;
+}
+#Modify_ph form input,
+#mail form input,
+#password form input,
+#account form input
+{
+	
+	float: left;
+	width: 40%;
+	height: 25px;
+	display: block;
+	
+}
+#mys form .inbutton{
+	cursor: pointer;
+	float: left;
+    margin-left:15%;
+	margin-top:5%;
+	width: 120px;
+	height: 30px;
+	line-height: 25px;
+	border:0 #5791bf;
+	text-align:center;
+	background: #4aacd3;;
+	color:#fff;
+	display:block;
+}
+#Modify_ph form .inbutton,
+#mail form .inbutton,
+#password form .inbutton,
+#account form .inbutton
+{
+	cursor: pointer;
+	float: left;
+    margin-left: 8%;
+	margin-top:15%;
+	width: 20%;
+	height: 30px;
+	line-height: 25px;
+	border:0 #5791bf;
+	text-align:center;
+	background: #4aacd3;;
+	color:#fff;
+	display:block;
+
+}
+.fr7,
+.fr8,
+.fr9
+{
+	width: 70%;
+	height: 500px;
+	font-size: 14px;
+}
+.fr7 h2,
+.fr8 h2,
+.fr9 h2
+{
+	margin: 20px 0 0 30px;
+	height: 30px;
+	line-height: 30px;
+	width:200px;
+	color: #7d7575;
+}
+.fr7 form input,
+.fr8 form input,
+.fr9 form input
+{
+
+	width: 75px;
+	height: 25px;
+	display:inline-block;
+	float: left;
+	margin-left: 45px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+.fr7 form input:hover,
+.fr8 form input:hover,
+.fr9 form input:hover
+{
+	background-color: #4aacd3;
+	color: #fff;
+}
+.fr7 form label{
+	margin-bottom: 30px;
+	margin-left: 45px;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	font-size: 14px;
+}
+.fr7 form label input{
+	list-style: none;
+	margin: 3px 0 0 0;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+.fr7 form .inbutton,
+.fr8 form .inbutton,
+.fr9 form .inbutton
+{
+	width: 100px;
+	height: 30px;
+	float: left;
+	margin-left:10%;
+	margin-top: 6%;
+	cursor: pointer;
+	/*margin-bottom:2%;*/
+	border: 1px solid #4aacd3;
+	background: #4aacd3;
+	color:#fff;
+}
+
+.inbutton:active{
+	transform:scale(0.97);
+}
+.fr8 form span,
+.fr9 form span
+{
+	width: 100%;
+	height: 30px;
+	float: left;
+}
+.fr8 form span button,
+.fr9 form span button
+{
+	float: left;
+	text-decoration-style:all;
+	position:relative;
+	margin-top:20%;
+	margin-left:10%;
+	background: #4aacd3;
+} 
+.fr10 li{
+	width: 100%;
+}
+.fr10 p,
+.fr11 p,
+option{
+	font-size: 14px;
+	 color:#535353;
+}
+.fr10 h2,
+.fr11 h2{
+	width: 100%;
+	font-weight: 200;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	margin-left:15px;
+}
+.fr10 h2 span,
+.fr11 h2 span
+ {
+	margin-left: 20px;
+	color: #4aacd3;
+	font-size: 12px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.fr10 form ul li a,
+.fr11 form ul li a
+{
+	text-decoration:none;
+	color:#535353;
+}
+.hr1{
+	border: 1.5px solid #4aacd3;
+	margin-left: 3px;
+}
+.hr2{
+	margin-top: 30px;
+	width:99.5%;
+	border: 1px solid  #a2a2a2;
+	margin-left: 3px;
+	overflow: hidden;
+}
+.fr10_label,
+.fr10_content,
+.fr10_Date
+{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	 color:#535353;
+}
+.fr10_label{
+   float: left;
+   width: 20%;
+   margin-left: 20px;
+   font-size: 14px;
+}
+.fr10_label input{
+	margin-right: 10px;
+}
+.fr10_content{
+	width: 60%;
+	float: left;
+}
+.fr10_content span{
+	font-size: 13px;
+	line-height: 30px;
+	color: #a2a2a2;
+	margin-right: 8px;
+}
+.fr10_Date{
+	float: right;
+	margin-right: 8px;
+}
+.fr12_receiver,
+.fr12_theme
+{
+	width: 98%;
+	height:30px;
+	display: block;
+	margin: 5px auto 0 auto;
+	background-color: #fff;
+	border: 1px solid #a2a2a2;
+}
+.fr12_write{
+	background-color: #fff;
+	display: block;
+	width: 97%;
+	height: 300px;
+	border: 1px solid #C38E2D;
+	resize:none;
+	margin: 9px auto 0 auto;
+}
+.fr12_button{
+	width: 32%;
+	height:30px;
+	cursor: pointer;
+
+}
+.fr12_button:hover{
+	background-color: #4aacd3;
+	color: #fff;
+}
+
+.form_item input{	width:30%;}
+
+.mcontent{
+	display:none;
+}
+.msg{
+	display:none;
+	color:#999;
+}
+.msg .ati{
+	background:url(../icon/prompt_login.png);
+
+}
+.msg .err{
+	background:url(../icon/err_login.png);
+}
+.msg .ok{
+	background:url(../icon/ok_login.png);
+}
+.msg .ati,.msg .err,.msg .ok{
+	background-repeat:no-repeat;
+	height:15px;
+	width:14px;
+	display:inline-block;
+	margin-right:4px;
+	vertical-align: middle;
+}
+.reg_login{
+	display:block;
+	visibility:hidden;
+	margin-left:24%;
+	height:15px;
+	color:#999;
+	font-size:14px; 
+	margin-bottom:5px;
+}
+.spb{
+	position:relative;
+	display:block;
+	visibility:hidden;
+	color:#999;
+	font-winght:400;
+	height:20px;
+	margin-left:155px;
+	width:60px;
+	font-size:14px;
+}
+
+.demo{width:600px;  }
+.demo p{ width:40%;line-height:30px; font-size:16px}
+
+.lasem{
+	position:absolute;
+	width:350px;
+	left:112px;
+}
+.lasem em{
+	display:inline;
+	width:64px;
+	height:16px;
+	line-height:16px;
+	color:#fff;
+	background:#FFD099;
+	display:inline-block;
+	font-style:normal;
+	text-align:center;
+	margin:3px 1px;
+}
+.lasem .em_active{
+	background: #FF6600;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.CommentInfo" table="comment">
+        <id name="commentId" type="int">
+            <column name="commentId" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="userId" class="cn.smartpolice.hibernate.CompanyUser" fetch="join">
+            <column name="userid" />
+        </many-to-one>
+
+        <property name="type" type="int">
+            <column name="TYPE" />
+        </property>
+        <property name="date" type="java.sql.Date">
+            <column name="DATE" />
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="CONTENT" />
+        </property>
+        <property name="handle" type="java.lang.String">
+            <column name="HANDLE" />
+        </property>
+        <property name="replyid" type="int">
+            <column name="REPLYID" />
+        </property>
+        <property name="replydate" type="java.sql.Date">
+            <column name="REPLYDATE" />
+        </property>
+        <property name="reply" type="java.lang.String">
+            <column name="REPLY" />
+        </property>
+    </class>
+</hibernate-mapping>

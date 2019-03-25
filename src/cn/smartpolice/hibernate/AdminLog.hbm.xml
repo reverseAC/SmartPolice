@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-1 18:27:10 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.AdminLog" table="ADMINLOG">
+        <id name="logId" type="int">
+            <column name="LOGID" />
+            <generator class="native" />
+        </id>
+        <property name="managerid" type="int">
+            <column name="MANAGERID" />
+        </property>
+        <property name="intime" type="java.util.Date">
+            <column name="INTIME" />
+        </property>
+        <property name="outtime" type="java.util.Date">
+            <column name="OUTTIME" />
+        </property>
+        <property name="actiontype" type="java.lang.String">
+            <column name="ACTIONTYPE" />
+        </property>
+    </class>
+</hibernate-mapping>

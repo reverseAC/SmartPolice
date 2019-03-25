@@ -1,0 +1,256 @@
+@CHARSET "UTF-8";
+.chat_mian {
+    width: 350px;
+    height: 360px;
+    left: 400px;
+    top: 60px;
+    position: absolute;
+    background: #f6f6f6;
+}
+.chat_left{
+	position:relative;
+	top:0px;
+	left:0px;
+	height:360px;
+	width:350px;
+	background:#f0f0f0;
+}
+.chat_header ,.manager_header{
+    background:#4aacd3;
+    height: 30px;
+    cursor: move;
+    text-align:center;
+}    
+.chat_header h3,.manager_header span,.manager_header h4{
+	font-size: 12px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    color: #fff;
+    display:inline-block;
+}
+.chat_group_btn,.chat_close{
+	width:30px;
+	height:30px;
+	position:absolute;	
+	cursor:pointer;
+	z-index:1;
+}
+.chat_group_btn{
+	top:0px;
+	right:0px;
+	background:url('../icon/chat_san.png') no-repeat;
+	background-position:8px center;
+}      
+.chat_close{
+	top:0px;
+	left:0px;
+	background:url('../icon/chat_icon.png') no-repeat;
+	background-position:8px center;
+}  
+.chat_close:hover{
+	top:0px;
+	left:0px;
+	background:url('../icon/chat_icon_de.png') no-repeat;
+	background-position:8px center;
+}  
+.chat_right{
+	position:relative;
+	top:-360px;
+	right:-360px;
+	height:360px;
+	width:200px;
+	background:#f0f0f0;
+}       
+.chat_input{
+	position:relative;
+	top:230px;
+	left:0px;
+	height:100px;
+	background:#e7e6e6;
+}      
+.chat_input .package{
+	width: 80%;
+    margin: 0px auto;
+}
+.chat_input .package li{
+	height:20px;
+	width: 20%;
+    display: inline-block;
+    padding: 10px 0;
+    background:url(../icon/package.png)no-repeat;
+    background-position:0px center;
+}       
+.chat_item{
+	width: 80%;
+    margin: 0 auto;
+} 
+.chat_item .text{
+	float: left;
+    padding: 10px 5px;
+    width: 65%;
+    -moz-border-radius:10px; 
+    -webkit-border-radius:10px; 
+    border-radius:10px;
+    border:none;
+} 
+.btn_china{
+	background: #4aacd3;
+    border: none;
+    height: 20px;
+    width:70px;
+    color: #fff;
+    font-size: 12px;
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+}    
+.btn_english{
+	background:#E7E6E6;
+    border: none;
+    height: 20px;
+    width:70px;
+    color: #4aacd3;
+    font-size: 12px;
+    text-align:center;
+    display:inline-block;
+}
+.chat_right{
+	display:none;
+}
+.manager_header span{
+	display: inline-block;
+    background: url(../icon/chat_header.png)no-repeat;
+    background-position: 0px center;
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+.chat_group_btn{
+	transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+}
+.chat_group_btn_on{
+	transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+}
+.manager_group{
+	background: #e7e6e6;
+	height: 40px;
+}    
+.manager_group span{
+	margin-top: 5px;
+    height:30px;
+    width: 95px;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+} 
+.manager_group span:first-child{
+ 	border-right:1px dashed #fff;
+ 	background:url(../icon/chat_item.png)no-repeat;
+ 	background-position: 35px center;
+} 
+.manager_group span:last-child{
+	background:url(../icon/chat_group.png)no-repeat;
+	    background-position: 35px center;
+} 
+.person_group{
+	
+}     
+.person_group li{
+	height:40px;
+	cursor: pointer;
+}   
+.person_item{
+	width:90%;
+	margin:0 auto;
+	border-bottom: 1px solid #fff;
+}    
+.person_group li span{
+	background:url(../icon/chat_header.png)no-repeat;
+	background-position: 0px center;
+	float: left;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: 4px 0px;
+}
+.person_group li h4{
+	font-size: 12px;
+    line-height: 40px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    color: #000;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+.person_group li p.time{
+	font-size: 10px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    color: #737070;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    float: right;
+}
+.add_group{
+	display:none;
+	height:40px;
+	width:100%;
+	margin:0 auto;
+	background:#F6F6F6;
+}
+.add_group .add_text{
+	border: none;
+    width: 60%;
+    height: 26px;
+    margin-top: 10px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 7px 0px 0px 7px;
+}
+.add_btn{
+	border: none;
+    height: 26px;
+    width: 29%;
+    border-radius: 11px;
+    color: #fff;
+    background: #4AACD3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        

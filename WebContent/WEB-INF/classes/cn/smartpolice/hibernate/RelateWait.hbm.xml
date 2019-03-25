@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.RelateWait" table="relate_wait">
+        <id name="rwid" type="int">
+            <column name="RWID" />
+            <generator class="assigned" />
+        </id>
+        <property name="applyId" type="int">
+            <column name="APPLYID" />
+        </property>
+        <property name="deviceId" type="int">
+            <column name="DEVICEID" />
+        </property>
+        <property name="askId" type="int">
+            <column name="ASKID" />
+        </property>
+        <property name="applyType" type="boolean">
+            <column name="APPLYTYPE" />
+        </property>
+        <property name="applyRight" type="java.lang.String">
+            <column name="APPLYRIGHT" />
+        </property>
+        <property name="applytime" type="java.util.Date">
+            <column name="APPLYTIME" />
+        </property>
+        <property name="ackTime" type="java.util.Date">
+            <column name="ACKTIME" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+        <property name="kind" type="java.lang.String">
+            <column name="KIND" />
+        </property>
+        <property name="message" type="java.lang.String">
+            <column name="MESSAGE" />
+        </property>
+    </class>
+</hibernate-mapping>

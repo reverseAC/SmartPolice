@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<package name="firm-admin" extends="json-default">
+		<action name="firmAdminSelf" method="firmAdminSelf" class="firmAdminAction">
+			<result name="success">/Company/firm_admin_self.jsp</result>
+
+		</action>
+
+		<action name="firmAdminChangeInfo" method="firmAdminChangeInfo"
+			class="firmAdminAction">
+			<result name="success" type="chain">firmAdminSelf</result>
+
+		</action>
+
+		<action name="firmAdimnPassword" method="firmAdimnPassword"
+			class="firmAdminAction">
+			<result name="success">/Company/firm_login.jsp</result>
+
+		</action>
+		<action name="firmAdminDevice" method="firmAdminDevice" class="firmAdminAction">
+			<result type="json" ></result>
+
+		</action>
+		<action name="runInfo" method="runInfo" class="firmAdminAction">
+			<result type="json" ></result>
+
+		</action>
+		<action name="runInfoDeinfo" method="runInfoDeinfo" class="firmAdminAction">
+			<result type="json" ></result>
+
+		</action>
+		<action name="comment" method="comment" class="firmAdminAction">
+			<result type="json" ></result>
+
+		</action>
+		<action name="removeComments" method="removeComments" class="firmAdminAction">
+			<result name="success">/Company/adviseNotice.jsp</result>
+
+		</action>
+		<action name="removeComment" method="removeComment" class="firmAdminAction">
+			<result name="success">/Company/adviseNotice.jsp</result>
+
+		</action>
+		<action name="checkComment" method="checkComment" class="firmAdminAction">
+			<result name="success">/Company/adviseNotice.jsp</result>
+
+		</action>
+		<action name="firmAdminDeviceInfo" method="firmAdmindeviceInfo"
+			class="firmAdminAction">
+			<result name="success">/Company/firm_Admin_DeviceInfo.jsp
+			</result>
+
+		</action>
+		<action name="firmRemoveDevice" method="firmRemoveDevice"
+			class="firmAdminAction">
+			<result name="success" type="chain">firmAdminDevive</result>
+
+		</action>
+		<action name="removeDeviceAll" method="removeDeviceAll"
+			class="firmAdminAction">
+			<result name="success">/Company/firm_Admin_DeviceInfo.jsp</result>
+		</action>
+		<action name="firmAdminSoftInfo" method="firmAdminSoftInfo"
+			class="firmAdminAction">
+			<result name="success" type="redirect">/Company/firm_Admin_SoftInfo.jsp
+			</result>
+		</action>
+		<action name="firmRemoveSoft" method="firmRemoveSoft" class="firmAdminAction">
+			<result name="success">/Company/firm_Admin_Soft.jsp</result>
+		</action>
+		<action name="firmAllRemove" method="firmAllRemove" class="firmAdminAction">
+			<result name="success">/Company/firm_Admin_Soft.jsp</result>
+		</action>
+		<action name="findSoftInfo" method="findSoftInfo" class="firmAdminAction">
+			<result name="success">/Company/firm_Admin_Soft.jsp</result>
+		</action>
+		
+		<action name="firmAdminmsg" method="firmAdminmsg" class="firmAdminAction">
+			<result name="success">/Company/adviseNotice.jsp</result>
+
+		</action>
+		<action name="firmAdminMsgInfo" method="firmAdminMsgInfo"
+			class="firmAdminAction">
+			<result name="success">/Company/firm_admin_msgInfo.jsp
+			</result>
+
+		</action>
+		
+		<action name="f_uploadSoftinfo" method="uploadSoftinfo" class="firmAdminAction">
+			<result name="success">/Company/firm_up_soft.jsp</result>
+			<result name="error">/Company/indexC.jsp</result>
+		</action>
+		<action name="firmfeedback" method="firmfeedback" class="firmAdminAction">
+			<result name="success">/Company/firm_feedback.jsp</result>
+			<result name="error">/Company/indexC.jsp</result>
+		</action>
+		<action name="f_sec-question" method="security" class="firmAdminAction">
+			<result name="success">/Company/newPas.jsp</result>
+			<result name="error">/Company/loginFPwd.jsp</result>
+		</action>
+		<action name="save-new-pwd" method="saveNewPwd" class="firmAdminAction">
+			<result name="success">/Company/firm_login.jsp</result>
+			<result name="error">/Company/newPas.jsp</result>
+		</action>
+		<action name="f_uploadPredeviceinfo" method="uploadPredeviceinfo" class="firmAdminAction">
+			<result name="success">/Company/firm_up_device.jsp</result>
+			<result name="error">/Company/indexC.jsp</result>
+			</action>		
+	</package>
+	<package name="firm-table" extends="json-default"  namespace="/" >
+		<action name="firmSoftTable" method="firmAdminSoft" class="firmAdminAction">
+			<result name="success" type="json">
+				<param name="root">returndata</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>

@@ -1,0 +1,144 @@
+@CHARSET "UTF-8";
+.main_body .position{
+	height: 30px;
+	line-height: 30px;
+	margin: 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+.position span{
+	background: url(../icon_m/icon.png);
+	background-repeat: no-repeat;
+	background-position: 0px -182px;
+	width: 10px;
+	height: 14px;
+	display: inline-block;
+	margin-bottom: -4px;
+}
+.position h3,.position p{
+	font-weight: normal;
+	font-size: 12px;
+	display: inline-block;
+	line-height: 30px;
+}
+
+
+
+.conversion_different{
+	width:99%;
+}
+.operation{
+	width:99%;
+	margin-top:18px;
+}
+.operation .operating{
+	display:inline-block;
+	margin-left:20px;
+	background:#e8e8e8;
+	width:97%;
+}
+.operation .operating li{
+	float:left;
+	line-height:30px;
+	padding:0 15px;
+	display:inline-block;
+	font-size:12px;	
+	cursor: pointer;
+}
+.operation .operating li:hover{
+	background:#ccc;
+}
+.operation .operating li a{
+	color:#333;
+}
+.operation .operating li a b{
+    height:12px;
+	width:12px;
+	display:inline-block;
+	vertical-align: middle;
+    margin-bottom: 4px;
+    margin-right: 6px;
+}
+.operation .operating li:first-child a b{
+	background:url(../icon_m/icon.png)no-repeat;
+	/* background-position:-67px -213px; */
+	background-position:-79px -213px;
+}
+.operation .operating li:nth-child(2) a b{
+	background:url(../icon_m/icon.png)no-repeat;
+	/* background-position:-79px -213px; */
+	background-position:-91px -213px;
+}
+/* .operation .operating li:nth-child(3) a b{
+	background:url(../icon_m/icon.png)no-repeat;
+	background-position:-91px -213px;
+}
+.operation .operating li:nth-child(4) a b{
+	background:url(../icon_m/icon.png)no-repeat;
+	background-position:-103px -213px;
+}
+.operation .operating li:nth-child(5) a b{
+	background:url(../icon_m/icon.png)no-repeat;
+	background-position:-116px -213px;
+} */
+
+.detailed_list{
+	width:80%;
+	margin:0 auto;
+	background:#F3F7F9;
+	margin-top:20px;
+}
+.operation .detailed_list li{
+	display:block;
+	float:none;
+	width:80%;
+	margin:0 auto;
+    font-size:12px;
+    font-family:"微软雅黑";
+
+}
+.operation .detailed_list li i{
+	font-style:normal;
+	width:20%;
+	text-align:right;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	padding-right:40px;
+	font-weight:bold;
+}
+.detailed_content{
+	display:inline-block;
+}
+.detailed_content input{
+	display:inline-block;
+	padding:5px 24px;
+	font:bold 14px/14px HelveticaNeue, Arial;
+	color:#555;
+	border:1px solid #ECECEC;
+    height:30px;
+	cursor:pointer;
+	background:#F7F3F5;
+	
+	
+}
+.detailed_list li:last-child{
+	padding-bottom:40px;
+}
+.detailed_content .the_editor:hover{
+	background:#fecc5f;
+	color:#276CA3;
+}
+.detailed_content .re_back:hover{
+	background:#FEDD9B;
+	color:#276CA3;
+}
+
+
+
+
+
+
+
+
+
+

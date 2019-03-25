@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.DeviceAudit" table="device_audit">
+        <id name="auditId" type="int">
+            <column name="AUDITID" />
+            <generator class="native" />
+        </id>
+        <property name="deviceName" type="java.lang.String">
+            <column name="DEVICENAME" />
+        </property>
+        <property name="code" type="java.lang.String">
+            <column name="CODE" />
+        </property>
+        <property name="demo" type="java.lang.String">
+            <column name="DEMO" />
+        </property>
+        <property name="companyId" type="int">
+            <column name="COMPANYID" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="checkId" type="int">
+            <column name="CHECKID" />
+        </property>
+        <property name="checkdate" type="java.util.Date">
+            <column name="CHECKDATE" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+    </class>
+</hibernate-mapping>

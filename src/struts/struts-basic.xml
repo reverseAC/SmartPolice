@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<package name="struts-basic" extends="struts-default">
+    <interceptors>
+    <!--  自定义拦截器-->
+    <interceptor name="authority" class="cn.smartpolice.action.LoginInterceptor"/>
+      <!--  自定义拦截器栈-->    
+      <interceptor-stack name="struts-basic">
+        <interceptor-ref name="authority">
+        <!-- 不需要拦截的方法配置 -->
+ <param name="excludeMethods">login</param> 
+ <param name="name">cn.smartpolice.action.ManagerLoginAction</param> 
+  <param name="excludeMethods">login</param> 
+ <param name="name">cn.smartpolice.action.FirmLoginAction</param> 
+    </interceptor-ref>
+    <!-- structs自带的拦截器 -->
+       <interceptor-ref name="defaultStack"/>
+      </interceptor-stack>
+    </interceptors>
+    <!-- 定义为默认拦截器 -->
+    <default-interceptor-ref name="struts-basic"/>  
+    <!-- 全局登录跳转 -->  
+     <global-results>  
+           <result name="Mlogin" >/Manager/loginPageM.jsp</result>  
+           <result name="Clogin" >/Company/firm_login.jsp</result>  
+        </global-results> 
+  <!-- 	<action name="manager-login" method="login" class="managerLoginAction">
+		
+			<result name="success">/Manager/indexM.jsp</result>
+			<result name="error">/Manager/loginPageM.jsp</result>
+			
+		</action>  -->
+    </package>
+    </struts>

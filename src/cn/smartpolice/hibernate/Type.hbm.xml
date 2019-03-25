@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.Type" table="type">
+        <id name="typeId" type="int">
+            <column name="TYPEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="typeNo" type="int">
+            <column name="TYPENO" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="sort" type="int">
+            <column name="SORT" />
+        </property>
+    </class>
+</hibernate-mapping>

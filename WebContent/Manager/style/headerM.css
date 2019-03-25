@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+.head{
+	height: 87px;
+	width: 100%;
+    background:url(../icon_m/top_back.png);
+    background-repeat: repeat-x;
+}
+.logo{
+	height: 83px;
+	width: 228px;
+	background: url(../icon_m/icon.png);
+	background-repeat: no-repeat;
+	background-position:0px 0px;
+	margin: 1px 0 1px 30px;
+	display: inline-block;
+}
+.left_title{
+	height: 26px;
+	width: 190px;
+	background: url(../icon_m/icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 -84px;
+	margin: 0 30px 0 0;
+}
+.left_title ul{
+	display: inline-block;
+	padding-left: 28px;
+	height: 27px;
+}
+.left_title ul li{
+	float: left;
+	line-height: 27px;
+	width: 70px;
+	height: 25px;
+	text-align: center;	
+}
+.left_title li:first-child a{
+	border-right: 2px solid #fff;
+	height: 60%;
+	padding-right: 10px
+}
+.left_title li a{
+    color: #fff;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 14px;
+    display: inline-block;
+}
+.left_title li span{
+	margin: 0 5px;
+	display: inline-block;
+	background: url(../icon_m/icon.png);	
+	background-repeat: no-repeat;	
+}
+.left_title li .help{
+	height: 12px;
+	width: 12px;
+	background-position: 0px -110px;
+}
+.left_title li .out{
+	height: 12px;
+	width: 10px;
+	background-position: -12px -110px;
+}
+.menu_time{
+	background: #f0f0f0;
+	height: 30px;
+	width: 100%;
+	border-top:1px solid #ccc;
+	box-shadow: 0px -1px 3px #fff;
+}
+.left_time p{
+	float: left;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.left_time p:last-child a{
+	display: inline-block;
+	margin:0 4px;
+}
+
+.menu li{
+	float: left;
+	line-height: 29px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+.menu li i{
+	background: url(../icon_m/icon.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-right: 6px;
+	margin-bottom: -1px;
+}
+.menu li:first-child i{	
+	background-position: -22px -110px;
+	height: 12px;
+	width: 12px;
+}
+.menu li:nth-child(2) i{
+	background-position: -34px -110px;
+	height: 12px;
+	width: 12px;
+}
+.menu li:nth-child(3) i{
+	background-position: -46px -110px;
+	height: 12px;
+	width: 11px;
+}
+.menu li:nth-child(4) i{
+	background-position: -57px -110px;
+	height: 12px;
+	width: 13px;
+}
+.menu li:nth-child(5) i{
+	background-position: -69px -110px;
+	height: 12px;
+	width: 13px;
+}
+.menu li:hover{
+	background:#ccc;
+}
+.blue_line{
+	background: url(../icon_m/blue_line.png);
+	background-repeat: repeat-x;
+	height: 3px;
+	
+}

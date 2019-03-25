@@ -1,0 +1,50 @@
+  body{
+    align:center;
+    }
+    table .table-striped{
+    }
+    table{
+        width:100%;
+        text-align: center;
+       
+    }
+    table th{
+              
+        background:#276ca3;               
+        color:#fff;
+        font-size:12px;
+	    padding:5px 0px;
+	    border-right:1px solid #b8edff;
+    }
+    table tr th:last-child {
+	border-right:1px solid #ccc;
+	width:20%;
+    }
+  
+    table tr{
+	border:1px solid #ccc;
+    }
+    table tr:hover{
+        background: #eeeeee;
+    }
+    table td ul{
+	display:inline-block;
+	text-align:center;
+    }
+    .span6{
+        /*width:500px;*/
+        float:inherit;
+        margin:10px;
+    }
+    #pagiDiv span{
+        background:#5791bf;               
+        color:#fff;
+        border-radius: .1em;
+        padding:4px;       
+        width:15%;
+        font-size:12px;
+    }
+    #pagiDiv{
+        margin-top:8px;
+        margin-left:65%;
+    }

@@ -1,0 +1,76 @@
+body{
+	background:#ECECEC;
+}
+.all{
+	border:1px solid #d1d1d1;
+	width:92%;
+	
+	margin:18px 0 0 10px;	
+}
+
+.position{
+	
+	border-bottom:1px solid #d1d1d1;
+	height:30px;
+	
+	
+	box-shadow:inset 0 0 4px #fff;
+}
+.position h3{
+	font-size:14px;
+	font-weight:normal;
+	line-height:30px;
+	display:inline-block;
+	background:url(../icon/position.png);
+	background-repeat:no-repeat;
+	background-position:2px center;
+	padding-left:30px;
+}
+.position p{
+	font-size:14px;
+	line-height:30px;
+	color:#666;
+	display:inline-block;
+}
+.position a{
+	font-size:14px;
+	line-height:30px;
+	color:#666;
+}
+
+.mail-head ul li{
+	margin-top:3px;
+	font-size:12px;	
+}
+.mail-head ul li a{
+	text-decoration:underline;
+}
+
+.s1{
+	color:#666;
+}
+.mail-content{
+	font-size:14px;
+	font-family:Î¢ÈíÑÅºÚ;
+	margin-top:10px;
+	background:#fff;
+	height:230px;
+	border-top:1px solid #d1d1d1;
+}
+.mail-content button{
+    border:1px solid #d1d1d1;
+	margin-left:95%;
+	margin-top:23%;
+	width:5%;
+	
+}
+.mail-content p,
+.mail-head
+{
+	margin-top:5px;
+}
+.mail-content button a,
+.mail-head ul li a:active
+{
+	color:#666;
+}

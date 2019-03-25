@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.SoftDownload" table="soft_download">
+        <id name="sdId" type="int">
+            <column name="SDID" />
+            <generator class="assigned" />
+        </id>
+        <property name="serial" type="java.lang.String">
+            <column name="SERIAL" />
+        </property>
+        <property name="userId" type="int">
+            <column name="USERID" />
+        </property>
+        <property name="date" type="java.sql.Date">
+            <column name="DATE" />
+        </property>
+    </class>
+</hibernate-mapping>

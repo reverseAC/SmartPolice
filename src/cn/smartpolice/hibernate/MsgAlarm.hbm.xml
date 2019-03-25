@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.MsgAlarm" table="msg_alarm">
+        <id name="alarmid" type="int">
+            <column name="ALARMID" />
+            <generator class="native" />
+        </id>
+        <property name="time" type="java.util.Date">
+            <column name="TIME" />
+        </property>
+        <property name="deviceid" type="int">
+            <column name="DEVICEID" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="URL" />
+        </property>
+        <property name="level" type="int">
+            <column name="LEVEL" />
+        </property>
+        <property name="sort" type="int">
+            <column name="SORT" />
+        </property>
+    </class>
+</hibernate-mapping>

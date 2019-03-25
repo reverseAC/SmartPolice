@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.CompanyInfo" table="company_inf">
+        <id name="companyId" type="int">
+            <column name="COMPANYID" />
+            <generator class="assigned" />
+        </id>
+        <property name="IDNumber" type="java.lang.String">
+            <column name="IDNUMBER" />
+        </property>
+        <property name="companyname" type="java.lang.String">
+            <column name="COMPANYNAME" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="demo" type="java.lang.String">
+            <column name="DEMO" />
+        </property>
+        <property name="logo" type="java.lang.String">
+            <column name="LOGO" />
+        </property>
+        <property name="receiver" type="java.lang.String">
+            <column name="RECEIVER" />
+        </property>
+    </class>
+</hibernate-mapping>

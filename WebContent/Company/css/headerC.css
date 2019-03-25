@@ -1,0 +1,144 @@
+@CHARSET "UTF-8";
+body{
+	background:#ECECEC;
+}
+#head_background{
+	background:url(../icon/headbk.png)repeat-x;
+	height:88px;
+	width:100%;
+}
+.logo_left{
+	background:url(../icon/logo.png)no-repeat;
+	height:84px;
+	width:225px;
+	margin:4px 0px 4px 75px;
+}
+.wel_right{
+	background:url(../icon/icon.png)no-repeat;
+	background-position:0 -86px;
+	height:24px;
+	width:200px;
+	
+}
+.wel_right p{
+	text-align: center;
+	font-size: 12px;
+	/* font-weight: bold; */
+	color: #fff;
+	line-height:24px;
+}
+.wel_right p a{
+	font-family: "微软雅黑";
+	color:#fff;
+	display:inline-block;
+	padding:0 2px;
+}
+.wel_right p a:hover{
+	text-decoration: underline;
+}
+.control li{
+	float:left;
+	margin-right:5px;
+}
+.control li:first-child{
+	margin-left:55px;
+}
+.control li span{
+	display:inline-block;
+	height:34px;
+	width:34px;
+}
+.control li:first-child span{
+	background:url(../icon/leader.png)no-repeat;	
+}
+.control li:first-child span:hover{
+	background:url(../icon/leader1.png)no-repeat;
+} 
+.control li:nth-child(2) span{
+	background:url(../icon/PCenter.png)no-repeat;
+}
+.control li:nth-child(2) span:hover{
+	background:url(../icon/PCenter1.png)no-repeat;
+}
+.control li:nth-child(3) span{
+	background:url(../icon/set_up.png)no-repeat;
+}
+.control li:nth-child(3) span:hover{
+	background:url(../icon/set_up1.png)no-repeat;
+}
+.control li:nth-child(4) span{
+	background:url(../icon/out.png)no-repeat;
+}
+.control li:nth-child(4) span:hover{
+	background:url(../icon/out1.png)no-repeat;
+}
+.control li:nth-child(5) span{
+	background:url(../icon/chat.png)no-repeat;
+}
+.control li:nth-child(5) span:hover{
+	background:url(../icon/chat1.png)no-repeat;
+}
+.back_line{
+	background:url(../icon/headbk01.png)repeat-x;
+	height:10px;
+	width:100%;
+}
+
+.back_white{
+	background:#eceaeb;
+	height:34px;
+	width:100%;
+}
+.back_white .suona span{
+	background:url(../icon/suona.png)no-repeat;
+	display:inline-block;
+	width:19px;
+	height:18px;
+	float:left;
+	margin: 5px 3px 5px 15px;
+}
+.back_white .suona .title{
+	display:inline-block;
+	line-height:28px;
+	font-size:12px;
+	float:left;
+}
+.back_white .suona .title #time{
+	display:inline-block;
+	line-height:28px;
+	font-size:12px;
+}
+.dynamic_info{
+	cursor: pointer;
+}
+.dynamic_info a{
+	line-height:28px;
+	float:left;
+	margin-right:10px;
+}
+.top_line {
+    background: url(../icon/headbk_right001.png)repeat-x;
+    width: 100%;
+    height: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

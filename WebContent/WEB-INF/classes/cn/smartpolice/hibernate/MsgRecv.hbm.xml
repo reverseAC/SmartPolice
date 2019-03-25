@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.MsgRecv" table="msg_recv">
+        <id name="recvid" type="int">
+            <column name="RECVID" />
+            <generator class="native" />
+        </id>
+        <property name="messageid" type="int">
+            <column name="MESSAGEID" />
+        </property>
+        <property name="senduserid" type="int">
+            <column name="SENDUSERID" />
+        </property>
+        <property name="recvuserid" type="int">
+            <column name="RECVUSERID" />
+        </property>
+        <property name="recvtype" type="int">
+            <column name="recvtype" />
+        </property>
+        <property name="msgtype" type="java.lang.String">
+            <column name="MSGTYPE" />
+        </property>
+        <property name="state" type="int">
+            <column name="STATE" />
+        </property>
+        <property name="recvtime" type="java.util.Date">
+            <column name="RECVTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

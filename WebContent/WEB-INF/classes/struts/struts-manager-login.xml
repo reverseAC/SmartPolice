@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<package name="login" extends="struts-default">
+		<action name="manager-login" method="login" class="managerLoginAction">
+			<!-- <result name="input">/firm_em.jsp</result> -->
+			<result name="success">/Manager/indexM.jsp</result>
+			<result name="error">/Manager/loginPageM.jsp</result>
+		</action>
+		<action name="manager-logout" method="logout" class="managerLoginAction">
+			<result name="success">/Manager/loginPageM.jsp</result>
+		
+			<!-- <result name="error">/Manager/login.jsp</result> -->
+		</action>
+		<action name="sec-question" method="security" class="managerLoginAction">
+			<result name="success" >
+			/Manager/newPas.jsp
+			</result>
+			<result name="error">/Manager/loginFPwdM.jsp</result>
+		</action>
+		
+		<action name="save-new-pwdM" method="saveNewPwdM" class="managerLoginAction">
+			<result name="success">/Manager/loginPageM.jsp</result>
+			 <result name="error">/Manager/newPas.jsp</result>
+		</action>
+		
+	</package>
+</struts>

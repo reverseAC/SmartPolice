@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<package name="admin" extends="struts-basic">
+		<action name="managerAdminCompany" method="allCompany" class="managerAdminAction">
+			<result name="success" >/Manager/manager_admin_company.jsp</result>
+		</action>
+		<action name="managerAdminDevice" method="allDevice" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_device.jsp</result>
+		</action>
+		<action name="managerAdminMoveDevice" method="allMoveDevice"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_movedevice.jsp</result>
+		</action>
+		<action name="managerAdminUserinfo" method="allUserinfo" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_userinfo.jsp</result>
+		</action>
+		<action name="managerAdminWebservice" method="allWebservice"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_webservice.jsp</result>
+		</action>
+		<action name="managerAdminMsg_alarm" method="allMsg_alarms"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_msg_alarms.jsp</result>
+		</action>
+		<action name="managerAdminMsg_chat" method="allMsg_chat" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_msg_chat.jsp</result>
+		</action>
+		<action name="managerAdminMsg_notice" method="allMsg_notice"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_msg_notice.jsp</result>
+		</action>
+		<action name="managerAdmincomment" method="allComment" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_comment.jsp</result>
+		</action>
+		<action name="CompanyUserDetail1" method="CompanyDetail1"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_company.all.jsp</result>
+		</action>
+		<action name="PredeviceDetailOfManager" method="PredeviceDetailOfManager"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_device.all.jsp</result>
+		</action>
+		<!-- <action name="MovedeviceDetailOfManager" method="MovedeviceDetailOfManager"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_movedevice.all.jsp
+			</result>
+
+		</action> -->
+		<action name="UserDetail1" method="UserDetail1" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_userinfo.all.jsp</result>
+		</action>
+		<action name="ServiceOfChecked" method="ServiceOfChecked"
+			class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_webservice.all.jsp
+			</result>
+		</action>
+		<action name="All_msg_alarms" method="All_msg_alarms" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_msg_alarms.all.jsp
+			</result>
+		</action>
+		<action name="All_msg_chat" method="All_msg_chat" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_msg_chat.all.jsp</result>
+		</action>
+		<action name="All_msg_notice" method="All_msg_notice" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_msg_noctice.all.jsp
+			</result>
+		</action>
+		<action name="Allcomment" method="Allcomment" class="managerAdminAction">
+			<result name="success">/Manager/manager_admin_comment.all.jsp</result>
+		</action>
+		<action name="ManagerRemoveCompanyUser" method="removeCompanyUser"
+			class="managerAdminAction">
+			<result name="success" type="chain">managerAdminCompany</result>
+		</action>
+		<action name="ManagerRemovedevice" method="Removedevice" class="managerAdminAction">
+			<result name="success" type="chain">managerAdminDevice</result>
+		</action>
+		<action name="ManagerRemoveMovedevice" method="RemoveMovedevice" class="managerAdminAction">
+			<result name="success" type="chain">managerAdminMoveDevice</result>
+		</action>
+		<action name="ManagerRemovesuer" method="Removesuer" class="managerAdminAction">
+			<result name="success" type="chain">managerAdminUserinfo</result>
+		</action>
+		<action name="ManagerRemoveMsg_alarm" method="RemoveMsg_alarm" class="managerAdminAction">
+			<result name="success" type="chain">managerAdminMsg_alarm</result>
+		</action>
+		<action name="ManagerRemoveMsg_chat" method="RemoveMsg_chat" class="managerAdminAction">
+			<result name="success" type="chain">managerAdminMsg_chat</result>
+		</action>
+		<action name="ManagerRemoveMsg_notice" method="RemoveMsg_notice" class="managerAdminAction">
+			<result name="success" type="chain">managerAdminMsg_notice</result>
+		</action>
+		<action name="ManagerRemoveMsg_comment" method="RemoveMsg_comment" class="managerAdminAction">
+			<result name="success" type="chain">managerAdmincomment</result>
+		</action>
+		<action name="FindAddDev" method="FindAddDev" class="managerAdminAction">
+			<result name="success" >/Manager/indexRightM.jsp</result>
+		</action>
+		<action name="FindAddUser" method="FindAddUser" class="managerAdminAction">
+			<result name="success" >/Manager/indexRightM.jsp</result>
+		</action>
+			<action name="allLogDev" method="allLogDev" class="managerAdminAction">
+			<result name="success" >/Manager/manager_stat_logindev.all.jsp</result>
+		</action>
+		<action name="ManagerRemoveLogUser" method="removeLogUser" class="managerAdminAction">
+			<result name="success" >/Manager/manager_stat_loginuser.jsp</result>
+		</action>
+		<action name="StatLogUserAll" method="LogUserAll" class="managerAdminAction">
+			<result name="success">/Manager/manager_stat_loginuser.all.jsp</result>
+		</action>
+		<action name="updateQues" method="updateQues" class="managerAdminAction">
+			<result name="success">/Manager/systemSettings.jsp</result>
+			<result name="error">/Manager/systemSettings.jsp</result>
+		</action>
+		<action name="obtain" method="getManNum" class="managerAdminAction">
+			<!-- <result name="success">/Manager/manager_stat_company.jsp</result> -->
+		</action>
+		<action name="modify" method="modifyMessage" class="managerAdminAction">
+			<result name="success">/Manager/personalCenter.jsp</result>
+		</action>
+		<action name="modifyPass" method="modifyPass" class="managerAdminAction">
+			<result name="success">/Manager/personalCenter.jsp</result>
+		</action>
+	</package>
+</struts>

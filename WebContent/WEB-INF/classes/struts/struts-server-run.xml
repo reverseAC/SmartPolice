@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<package name="server-run" extends="struts-basic">
+		<action name="AddServers" method="AddServers" class="serverRunAction">
+			<result name="addservers">/Manager/notifyServer.jsp</result>
+
+		</action>
+
+		<action name="PlatMsgAnounce" method="PlatMsgAnounce" class="serverRunAction">
+			<result name="platmsganounce">/Manager/notifyIssued.jsp</result>
+
+		</action>
+
+		<action name="SystemRunInfo" method="SystemRunInfo" class="serverRunAction">
+			<result name="systemruninfo">/Manager/sysOperationInfo.jsp
+			</result>
+
+		</action>
+		<action name="allServers" method="AllServers" class="serverRunAction">
+			<result name="success">/Manager/manager_admin_webservice.jsp
+			</result>
+
+		</action>
+		<action name="serverInfo" method="ServerInfo" class="serverRunAction">
+			<result name="success"  type="chain">allServers
+			</result>
+
+		</action>
+		<action name="removeServer" method="RemoveServer" class="serverRunAction">
+			<result name="success"  type="chain">allServers
+			</result>
+
+		</action>
+		<action name="addServer" method="AddServer" class="serverRunAction">
+			<result name="success" >/Manager/notifyServer.jsp
+			</result>
+
+		</action>
+		<action name="systemLog" method="SystemLog" class="serverRunAction">
+			<result name="success" >/Manager/sysdaily.jsp</result>
+
+		</action>
+		<action name="deleteSystemLog" method="DeleteSystemLog" class="serverRunAction">
+			<result name="success" >/Manager/sysdaily.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-27 9:14:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.smartpolice.hibernate.ManagerInfo" table="manager_inf">
+        <id name="managerId" type="int">
+            <column name="MANAGERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="number" type="java.lang.String">
+            <column name="NUMBER" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+           <property name="question1" type="java.lang.String">
+            <column name="safe_question_one" />
+        </property>
+        <property name="answer1" type="java.lang.String">
+            <column name="question_one_answer" />
+        </property>
+        <property name="question2" type="java.lang.String">
+            <column name="safe_question_two" />
+        </property>
+        <property name="answer2" type="java.lang.String">
+            <column name="question_two_answer" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
